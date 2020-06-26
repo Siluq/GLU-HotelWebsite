@@ -26,7 +26,7 @@
 </head>
 
 <body>
-    <a href="bookings"><button class="home">Database Bookings</button></a>
+    <a href="bookings/bookings.php"><button class="home">Database Bookings</button></a>
     <div class="container">
         <section id="start_adventure">
             <header>

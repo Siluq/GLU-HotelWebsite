@@ -2,7 +2,6 @@
  include('../config/connect.php');
  include('../assets/src/bookings_show.php');
 
-//  checkLoginAdmin();
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -37,6 +36,9 @@
         <?php
             loadBookings();
         ?>
+        <?php
+            booking_count();
+         ?> 
         </ul>
     </div>
 </body>

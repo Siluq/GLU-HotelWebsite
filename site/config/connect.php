@@ -20,4 +20,5 @@
         global $con;
         return mysqli_escape_string($con, $postvalue);
      }
+
 ?>

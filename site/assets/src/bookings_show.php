@@ -30,4 +30,24 @@ function loadBookings(){
         $qry->close();
     }
 
+function booking_count(){
+    global $con;
+
+        $qry = $con->query("SELECT COUNT(id) FROM booking;");
+        if($qry === false){
+            echo mysqli_error($con)." - ";
+            exit(LINE);
+        } else {
+            while ($row = $qry->fetch_assoc()){
+                echo '
+                <li class="table-header">
+                    <div class=" col col-2">Total bookingen:</div>
+                    <div class="col col-1">' . $row['COUNT(id)'] . '</div>
+                </li>
+                ';
+            }
+        }
+        $qry->close();
+    }
+
 ?>
